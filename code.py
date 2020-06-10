@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 def main():
-    image = Image.open("..\PL.jpg") #enter the location of the image after cloning the repository
+    image = Image.open("..\PL.jpg") #update the location of the image after cloning the repository
     st.image(image,use_column_width = True)
 
     ft_selection = st.sidebar.selectbox("Functionality Selection",('','Player Stat Comparison','Top Performers'),key = 'ft_selection')
@@ -19,7 +19,7 @@ def main():
         stat = st.sidebar.selectbox("Stat Types",('Standard Stats','Passing','Goal and Shot Creation','Defensive Actions','Miscellaneous'),key = 'stat')
 
         def load_data():
-            data = pd.read_excel("..\PL.xlsx",sheet_name = stat) #enter the location of the dataset after cloning the repository
+            data = pd.read_excel("..\PL.xlsx",sheet_name = stat) #update the location of the dataset after cloning the repository
             return data
 
         df = load_data()
@@ -94,7 +94,7 @@ def main():
         st.sidebar.subheader("Select Stat")
 
         def load_data():
-            data = pd.read_excel("..\PL.xlsx",sheet_name = "Miscellaneous") #enter the location of the dataset after cloning the repository
+            data = pd.read_excel("..\PL.xlsx",sheet_name = "Miscellaneous") #update the location of the dataset after cloning the repository
             return data
 
         df = load_data()
