@@ -1,6 +1,2 @@
 streamlit==0.60.0
-<<<<<<< HEAD
-Pillow==7.1.2
-=======
-Pillow==7.1.2
->>>>>>> 8d2ea520fdd2338ce26a0621bccd90002cc7781d
+Pillow==7.1.
