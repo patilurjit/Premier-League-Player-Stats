@@ -5,7 +5,7 @@ from PIL import Image
 
 def main():
     image = Image.open("PL.jpg") #update the location of the image after cloning the repository
-    st.image(image,use_column_width = True)
+    st.image(image,width = 450)
 
     ft_selection = st.sidebar.selectbox("Functionality Selection",('','Player Stat Comparison','Top Performers'),key = 'ft_selection')
 
